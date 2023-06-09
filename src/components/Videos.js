@@ -1,6 +1,7 @@
 import React from "react";
 import YouTube from "react-youtube";
 import backgroundImage from "../images/img.jpg";
+import "../App.css";
 
 export default function Videos() {
   const videoId = "lMtXfwk7PXg";
@@ -35,20 +36,22 @@ export default function Videos() {
         YouTube Video
       </h2>
       <div
+        className="yt"
         style={{
           boxShadow: "0px 3px 100px rgba(0, 0, 0, 0.1)",
           border: "solid purple 2px",
           borderRadius: "20px",
-          padding: "20px",
+          padding: "10px",
           background: "white",
-          // background: "linear-gradient(270deg, #800080 0%, #ff864c 100%)",
           margin: "5px",
+          width: "fit-content",
+          height: "100%"
         }}
       >
         <YouTube
           videoId={videoId}
           onReady={handleReady}
-          opts={{ width: "800px", height: "500px" }}
+          opts={{ width: "100%", height: "100%" }}
         />
       </div>
     </div>

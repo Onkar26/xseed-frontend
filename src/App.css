@@ -63,6 +63,13 @@ button:active {
   pointer-events: none;
 }
 
+@media (max-width: 900px) {
+  .yt {
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
