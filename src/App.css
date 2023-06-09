@@ -2,6 +2,62 @@
   text-align: center;
 }
 
+/* Width and height for the scrollbar track */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Background color of the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Styles for the scrollbar thumb (the draggable handle) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* On hover, styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Styles for the scrollbar corner (between vertical and horizontal scrollbar) */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
